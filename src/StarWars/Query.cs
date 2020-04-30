@@ -31,6 +31,11 @@ namespace StarWars
             return _repository.GetDroid(id);
         }
 
+        public Droid GetDroidByReview(Review review)
+        {
+            return _repository.GetDroid("2001");
+        }
+
         public IEnumerable<ICharacter> GetCharacter(string[] characterIds, IResolverContext context)
         {
             foreach (string characterId in characterIds)

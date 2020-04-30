@@ -28,7 +28,8 @@ namespace GraphQLAzureFunctions
                 .AddType<DroidType>()
                 .AddType<EpisodeType>()
                 .AddType<UnitType>()
-                .Create());
+                .AddInputObjectType<ReviewInputType>()
+                .Create()) ;
 
             builder.Services.AddAzureFunctionsGraphQL();
         }
